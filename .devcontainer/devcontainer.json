@@ -1,0 +1,9 @@
+{
+  "name": "fastapi-docker",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install -r app/requirements.txt"
+}

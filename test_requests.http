@@ -1,0 +1,11 @@
+### Create a new user
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+  "first_name": "Archit",
+  "last_name": "Patel"
+}
+
+### Get user by ID
+GET http://localhost:8000/user/1
